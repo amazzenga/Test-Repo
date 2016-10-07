@@ -4,19 +4,14 @@ function Octocat (n,a){
   this.name = n;
   this.arms = a;
   this.slap = function(){
-    for (var b=0; b<8;b++){
-      console.log ("Slap")
+    for (var b=0; b<this.arms;b++){
+      console.log ("SLAP");
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
 //Write your 3 new octocat objects below here.
+var mazzcat = new Octocat("Mazzenga", 3);
+var rosencat = new Octocat("Rosenburg", 9);
+var pentacat = new Octocat("Penta", 5);
+
+pentacat.slap()
